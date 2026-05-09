@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Perfil - KickOff</title>
+    <link rel="stylesheet" href="estilos.css" /> 
+    <link rel="stylesheet" href="perfil.css" /> 
+</head>
+<body>
+
+    <main class="container">
+        <div class="encabezado-perfil">
+            <h1 class="titulo-pagina">Editar Perfil</h1>
+        </div>
+
+        <div class="foto-perfil">
+            <svg xmlns="http://www.w3.org/2000/svg" class="imagen-perfil-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+        </div>
+
+        <form class="form-perfil">
+            <div class="campo-con-icono">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" value="Nombre De Usuario" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="icono-lapiz" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                </svg>
+            </div>
+
+            <div class="campo-con-icono">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="correo.prueba@ejemplo.com" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="icono-lapiz" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                </svg>
+            </div>
+
+            <div>
+                <label for="Contraseña">Contraseña</label>
+                <input type="Contraseña" id="Contraseña" value="********" />
+            </div>
+
+            <div>
+                <label for="equipos">Equipos favoritos</label>
+                <div class="equipos-favoritos-edicion">
+                    <span class="equipo-tag-perfil">Liverpool FC</span>
+                    <span class="equipo-tag-perfil">Uruguay</span>
+                    <span class="equipo-tag-perfil">Peñarol</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icono-mas" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="campo-con-flecha">
+                <label for="País">País</label>
+                <input type="text" id="pais" value="Uruguay" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="icono-flecha-derecha" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
+
+            <div class="botones-acciones-perfil">
+                <a href="index.html" class="btn btn-salir">Salir</a> 
+                <a href="home.html" class="btn btn-cancelar">Cancel</a>
+                <button type="submit" class="btn btn-guardar">Guardar</button>
+            </div>
+        </form>
+    </main>
+
+    <nav class="barra-navegacion">
+        <a href="home.html"> 
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            </svg>
+            <span>Inicio</span>
+        </a>
+        <a href="equipos.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM13.6695 15.9999H10.3295L8.95053 17.8969L9.5044 19.6031C10.2897 19.8607 11.1286 20 12 20C12.8714 20 13.7103 19.8607 14.4956 19.6031L15.0485 17.8969L13.6695 15.9999ZM5.29354 10.8719L4.00222 11.8095L4 12C4 13.7297 4.54894 15.3312 5.4821 16.6397L7.39254 16.6399L8.71453 14.8199L7.68654 11.6499L5.29354 10.8719ZM18.7055 10.8719L16.3125 11.6499L15.2845 14.8199L16.6065 16.6399L18.5179 16.6397C19.4511 15.3312 20 13.7297 20 12L19.997 11.81L18.7055 10.8719ZM12 9.536L9.656 11.238L10.552 14H13.447L14.343 11.238L12 9.536ZM14.2914 4.33299L12.9995 5.27293V7.78993L15.6935 9.74693L17.9325 9.01993L18.4867 7.3168C17.467 5.90685 15.9988 4.84254 14.2914 4.33299ZM9.70757 4.33329C8.00021 4.84307 6.53216 5.90762 5.51261 7.31778L6.06653 9.01993L8.30554 9.74693L10.9995 7.78993V5.27293L9.70757 4.33329Z"></path>
+            </svg>
+            <span>Equipos</span>
+        </a>
+        <a href="buscador.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <span>Buscar</span>
+        </a>
+        <a href="noticias.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <span>Noticias</span>
+        </a>
+        <a href="alertas.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M13.73 21a2 2 0 0 1-3.46 0M18 16v-5a6 6 0 0 0-5-5.91V4a1 1 0 0 0-2 0v1.09A6 6 0 0 0 6 11v5l-2 2v1h16v-1z"/>
+            </svg>
+            <span>Alertas</span>
+        </a>
+    </nav>
+
+</body>
+</html>

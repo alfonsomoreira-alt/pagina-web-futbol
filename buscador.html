@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar - KickOff</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="buscador.css" /> </head>
+<body>
+
+  <header class="encabezado-buscador">
+    <h1>Buscar Fútbol</h1> </header>
+
+  <main class="contenedor-principal-buscador">
+
+    <div class="barra-busqueda">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-lupa"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" class="campo-busqueda" placeholder="Jugadores, equipos, partidos...">
+    </div>
+
+    <section class="seccion-busquedas-recientes">
+      <h2>Búsquedas Recientes</h2>
+      <div class="lista-chips">
+        <div class="chip">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-reloj"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Mohamed Salah</span> <button class="btn-cerrar-chip">&times;</button>
+        </div>
+        <div class="chip">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-reloj"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Luis Suárez</span> <button class="btn-cerrar-chip">&times;</button>
+        </div>
+        <div class="chip">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-reloj"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Tabla Premier League</span> <button class="btn-cerrar-chip">&times;</button>
+        </div>
+        <div class="chip">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-reloj"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Final de Champions</span> <button class="btn-cerrar-chip">&times;</button>
+        </div>
+        <div class="chip">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-reloj"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Goles de Haaland</span> <button class="btn-cerrar-chip">&times;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-resultados">
+      <h2>Resultados</h2>
+
+      <div class="grid-resultados">
+
+        <div class="tarjeta-resultado jugador">
+          <img src="Mbappé.jpg" alt="Kylian Mbappé" class="imagen-resultado">
+          <div class="contenido-tarjeta">
+            <h3>Kylian Mbappé</h3>
+            <p>Paris Saint-Germain | Delantero</p>
+            <div class="info-adicional">
+                <span class="etiqueta-info">
+                    92 de valoración
+                </span>
+            </div>
+            <a href="#" class="btn btn-sm">Ver detalles</a>
+          </div>
+        </div>
+
+        <div class="tarjeta-resultado partido">
+          <img src="real-madrid.jpg" alt="Real Madrid" class="imagen-resultado">
+          <div class="contenido-tarjeta">
+            <h3>Real Madrid</h3>
+            <p>La Liga | España </p>
+            <div class="info-adicional">
+                <span class="etiqueta-info estado-proximo">14 títulos UCL</span>
+            </div>
+            <a href="#" class="btn btn-sm">Ver detalles</a>
+          </div>
+        </div>
+
+        <div class="tarjeta-resultado partido">
+          <img src="man-utd-vs-liverpool.jpg" alt="Man Utd vs Liverpool" class="imagen-resultado">
+          <div class="contenido-tarjeta">
+            <h3>Man Utd vs Liverpool</h3>
+            <p>Premier League | 20:00 GMT</p>
+            <div class="info-adicional">
+                <span class="etiqueta-info estado-proximo">Próximo</span>
+            </div>
+            <a href="#" class="btn btn-sm">Ver detalles</a>
+          </div>
+        </div>
+
+        <div class="tarjeta-resultado jugador">
+          <img src="lionel-messi.jpg" alt="Lionel Messi" class="imagen-resultado">
+          <div class="contenido-tarjeta">
+            <h3>Lionel Messi</h3>
+            <p>Inter Miami CF | Delantero</p>
+            <div class="info-adicional">
+                <span class="etiqueta-info">
+                    8 Balón de Oro
+                </span>
+            </div>
+            <a href="#" class="btn btn-sm">Ver detalles</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="barra-navegacion">
+        <a href="home.html"> 
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            </svg>
+            <span>Inicio</span>
+        </a>
+        <a href="equipos.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM13.6695 15.9999H10.3295L8.95053 17.8969L9.5044 19.6031C10.2897 19.8607 11.1286 20 12 20C12.8714 20 13.7103 19.8607 14.4956 19.6031L15.0485 17.8969L13.6695 15.9999ZM5.29354 10.8719L4.00222 11.8095L4 12C4 13.7297 4.54894 15.3312 5.4821 16.6397L7.39254 16.6399L8.71453 14.8199L7.68654 11.6499L5.29354 10.8719ZM18.7055 10.8719L16.3125 11.6499L15.2845 14.8199L16.6065 16.6399L18.5179 16.6397C19.4511 15.3312 20 13.7297 20 12L19.997 11.81L18.7055 10.8719ZM12 9.536L9.656 11.238L10.552 14H13.447L14.343 11.238L12 9.536ZM14.2914 4.33299L12.9995 5.27293V7.78993L15.6935 9.74693L17.9325 9.01993L18.4867 7.3168C17.467 5.90685 15.9988 4.84254 14.2914 4.33299ZM9.70757 4.33329C8.00021 4.84307 6.53216 5.90762 5.51261 7.31778L6.06653 9.01993L8.30554 9.74693L10.9995 7.78993V5.27293L9.70757 4.33329Z"></path>
+</svg>
+            <span>Equipos</span>
+        </a>
+        <a href="buscador.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <span>Buscar</span>
+        </a>
+        <a href="noticias.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <span>Noticias</span>
+        </a>
+        <a href="alertas.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M13.73 21a2 2 0 0 1-3.46 0M18 16v-5a6 6 0 0 0-5-5.91V4a1 1 0 0 0-2 0v1.09A6 6 0 0 0 6 11v5l-2 2v1h16v-1z"/>
+            </svg>
+            <span>Alertas</span>
+        </a>
+    </nav>
+
+</body>
+</html>
